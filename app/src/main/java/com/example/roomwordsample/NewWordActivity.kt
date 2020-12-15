@@ -2,22 +2,20 @@ package com.example.roomwordsample
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 
 class NewWordActivity : AppCompatActivity() {
 
-    //Add NewWordActivity   // Layth Al-Zamili
 
-    private lateinit var editWordView: EditText
-
+    //Add new words activity//Layth Al-Zamili
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_word)
-        editWordView = findViewById(R.id.edit_word)
+        val editWordView = findViewById<EditText>(R.id.edit_word)
 
         val button = findViewById<Button>(R.id.button_save)
         button.setOnClickListener {
