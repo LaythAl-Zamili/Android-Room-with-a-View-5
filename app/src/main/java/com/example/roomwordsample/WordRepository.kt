@@ -1,7 +1,7 @@
 package com.example.roomwordsample
 
 import androidx.annotation.WorkerThread
-import com.example.android.roomwordssample.WordDao
+
 import kotlinx.coroutines.flow.Flow
 
 /**
